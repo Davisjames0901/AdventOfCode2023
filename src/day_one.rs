@@ -46,10 +46,7 @@ fn first_num(input: &String, reversed: bool) -> i32 {
 
     //gotta look for the strings :/
     for name in LOOKUP {
-        let mut term = name.0.to_string();
-        if (reversed) {
-            term = term.chars().rev().collect();
-        }
+        let term = if (reversed) { name.0.chars().rev().collect() } else { name.0.to_string() };
 
         let result = match line.find(&term) {
             Some(x) => (x as i32, name.1),
