@@ -2,7 +2,7 @@ use std::collections::HashMap;
 use std::fs;
 use std::io::{self, BufRead};
 
-pub fn run() {
+pub fn part1() {
     let file = fs::File::open("/home/jdavis/RustroverProjects/AdventOfCode2023/src/day_two_dat.txt")
         .expect("Should have been able to read the file");
     let lines = io::BufReader::new(file).lines();
@@ -41,7 +41,7 @@ pub fn run() {
     println!("Total: {}", id_total);
 }
 
-pub fn run2() {
+pub fn part2() {
     let file = fs::File::open("/home/jdavis/RustroverProjects/AdventOfCode2023/src/day_two_dat.txt")
         .expect("Should have been able to read the file");
     let lines = io::BufReader::new(file).lines();

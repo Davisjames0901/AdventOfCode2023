@@ -13,7 +13,7 @@ const LOOKUP: [(&str, i32); 9] = [
     ("nine", 9)
 ];
 
-pub fn run() {
+pub fn part2() {
     let file = fs::File::open("/home/jdavis/RustroverProjects/AdventOfCode2023/src/day_one_dat.txt")
         .expect("Should have been able to read the file");
     let lines = io::BufReader::new(file).lines();
