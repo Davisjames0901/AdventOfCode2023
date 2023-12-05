@@ -3,7 +3,7 @@ use std::hash::{Hash};
 use std::collections::HashMap;
 use std::io::{self, BufRead};
 
-pub fn part1() {
+pub fn part2() {
     let file = fs::File::open("/home/jdavis/RustroverProjects/AdventOfCode2023/src/day_three_dat.txt")
         .expect("Should have been able to read the file");
     let lines = io::BufReader::new(file).lines().map(|x| x.unwrap().chars().collect::<Vec<char>>()).collect::<Vec<Vec<char>>>();
